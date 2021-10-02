@@ -2,7 +2,7 @@
 
 Colors used:
 Primary Color (Gray): #4a4a4a;
-Secondary Color (Blue): #005f73;
+Secondary Color (Green): #005f73;
 */
 
 header {
@@ -18,9 +18,7 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
   img {
-  width: 100%;
-}
-}
+  width: 100%; }
 
 header {
   background-color: #ffffff;
