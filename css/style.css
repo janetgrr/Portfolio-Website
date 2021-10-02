@@ -1,9 +1,15 @@
 /*
 
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
+Primary Color (Gray): #4a4a4a;
+Secondary Color (Blue): #005f73;
 */
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -16,21 +22,26 @@ body {
 }
 }
 
+header {
+  background-color: #ffffff;
+  width: 100%;
+}
+
 a {
-  color: #ff7f50;
+  color: #005f73;
   text-decoration: none; /* No underlining */
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #005f73;
   text-decoration: underline;
 }
 
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #005f73;
 }
 a:active { /* selected link */
-  color: #994c30;
+  color: #4a4a4a;
 }
 
 .button {
@@ -40,7 +51,7 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #005f73; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -56,6 +67,7 @@ h1 {
   font-size: 4em;
   font-weight: 700;
   font-family: 'Bebas Neue', cursive;
+  color: #005f73;
 }
 
 h2 {
