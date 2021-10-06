@@ -5,17 +5,17 @@ Primary Color (Gray): #4a4a4a;
 Secondary Color (Green): #005f73;
 */
 
-{
-  box-sizing: border-box;
-}
 
 header {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   width: 100%;
   margin: 10px;
-  padding: 10px 5px 15px 5px; /* Adds 10px top, 5px right, 15px bottom, 5px left */
+  padding: 10px 5px;
   border-bottom: 3px solid #4a4a4a;
-  position: relative;
+}
+
+{
+  box-sizing: border-box;
 }
 
 body {
@@ -27,10 +27,61 @@ body {
   color: #4a4a4a;
   } img { width: 100%; }
 
+  footer {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
+    } img { width: 100%; }
+
 a {
   color: #005f73;
+  font-size: 20px;
   text-decoration: none; /* No underlining */
+  list-style-type: none;
 }
+
+nav > ul > li > a {
+  padding: 0 15px;
+  display: inline-block;
+  width: 100%
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  list-style-type: none;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%
+  color: #005f73;
+  list-style-type: none;
+}
+
+nav > ul > li > a:hover{
+  padding: 0 15px;
+  display: inline-block;
+  width: 100%
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  list-style-type: none;
+}
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  list-style-type: none;
+}
+
 a:hover,
 a:focus {
   color: #005f73;
@@ -60,10 +111,6 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
-.container {
-  max-width: 1200px;
-}
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -88,3 +135,24 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px
+}
+
+#hero {
+  text-align: center; /* Centers text */
+  background-color: f9f9f9;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+  background-color: f9f9f9;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 3px solid #4a4a4a; }
