@@ -74,6 +74,11 @@ footer {
 img {
 width: 100%; }
 
+.logo {
+  text-align: center;
+  display: block;
+}
+
 main {
   padding-top: 133px;
 }
@@ -86,14 +91,23 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a; }
 
+  av > ul {
+    list-style-type: none;
+    padding: 0;
+
+  }
+
+  av > ul > li {
+    display: inline-block
+
+  }
+
   av > ul > li > a {
     padding: 0 15px;
-    display: inline-block;
-    width: 100%
+    width: 100%;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
-    list-style-type: none;
   }
 
   nav > ul > li > a:visited {
