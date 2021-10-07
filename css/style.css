@@ -67,6 +67,11 @@ footer {
   color: #4a4a4a;
   }
 
+  .social {
+    text-align: center
+    font-size: 40px
+  }
+
 * {
   box-sizing: border-box;
 }
