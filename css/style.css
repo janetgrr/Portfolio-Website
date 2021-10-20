@@ -125,8 +125,9 @@ footer {
   }
 
   .container {
-    padding: 0 15px;
-    max-width: 1200px
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 /* :::::::::::::: NAVIGATION :::::::::::::::: */
 nav > ul {
@@ -193,7 +194,20 @@ nav > ul > li > a:active {
   padding: 0.67em 0;
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 3px solid #4a4a4a; }
+#hero span {
+  display: block;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 3px;
+  solid #4a4a4a; }
+
+#work .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -213,6 +227,15 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
 }
 
 /* ==============================
