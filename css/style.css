@@ -19,9 +19,6 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a; }
 
-  main {
-    padding-top: 133px;
-  }
 
 /* :::::::::::::: TYPOGRAPHY :::::::::::::::: */
 h1, h2, h3, h4 {
@@ -113,6 +110,7 @@ footer {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
+  text-align: center;
   }
 
   .social {
@@ -128,6 +126,7 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
   }
 /* :::::::::::::: NAVIGATION :::::::::::::::: */
 nav > ul {
@@ -216,11 +215,15 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-    padding-top: 99px;
+    overflow: hidden;
   }
 
   body {
     font-size: 18px;
+  }
+
+  .logo {
+    float: left;
   }
 
   nav {
@@ -237,11 +240,15 @@ Medium devices (640px and larger)
   float: left;
   padding: 10px;
 }
-
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+    width: 50%;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
