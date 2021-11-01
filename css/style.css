@@ -97,6 +97,11 @@ width: 100%; }
   color: #005f73;
 }
 
+.logo:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
 header {
   background-color: #f9f9f9;
   width: 100%;
