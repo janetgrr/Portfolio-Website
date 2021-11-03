@@ -107,7 +107,6 @@ header {
   background-color: #f9f9f9;
   width: 100%;
   padding: 10px 5px;
-  max-width: 150px;
 }
 
 footer {
@@ -139,6 +138,7 @@ footer {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
 }
 
@@ -183,6 +183,36 @@ nav > ul > li > a:active {
   color: #4a4a4a;
   list-style-type: none;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  width: auto;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #4a4a4a;
+  text-align:center;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /* :::::::::::::: PAGE SPECIFIC :::::::::::::::: */
 
 #hero {
@@ -206,8 +236,7 @@ nav > ul > li > a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 3px;
-  solid #4a4a4a; }
+  border-bottom: 3px solid #4a4a4a; }
 
 #work .row::after {
   content: "";
@@ -278,7 +307,6 @@ Medium devices (640px and larger)
 .col-md-10 {width: 83.33%;}
 .col-md-11 {width: 91.66%;}
 .col-md-12 {width: 100%;}
-}
 
 [class*="col-"] {
   float: left;
@@ -290,18 +318,32 @@ Medium devices (640px and larger)
   display: table;
 }
 nav > ul > li {
+  margin: 1em 0;
   display: inline-block;
-  min-width: 641px;
 }
 
 .navtoggle li:not(:last-child) {
-  display: none;
+  display: inline-block;
 }
+
 .navtoggle li:last-child {
   display: none;
 }
+.navtoggle.responsive nav {
+  padding: 0;
+}
+.navtoggle.responsive li  {
+  padding: 0;
+  border-top: none;
+  text-align:left;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0;
+}
 
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -324,7 +366,6 @@ Large devices (1024px or larger)
   .col-lg-12 {width: 100%;}
   }
 
-}
 
 /* ==============================
 X-large devices (1440px or larger)
