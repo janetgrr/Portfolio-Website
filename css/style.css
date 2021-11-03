@@ -107,6 +107,7 @@ header {
   background-color: #f9f9f9;
   width: 100%;
   padding: 10px 5px;
+  max-width: 150px;
 }
 
 footer {
@@ -245,7 +246,7 @@ nav > ul > li > a:active {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -288,6 +289,18 @@ Medium devices (640px and larger)
   clear: both;
   display: table;
 }
+nav > ul > li {
+  display: inline-block;
+  min-width: 641px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -310,7 +323,9 @@ Large devices (1024px or larger)
   .col-lg-11 {width: 91.66%;}
   .col-lg-12 {width: 100%;}
   }
+
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
